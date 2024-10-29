@@ -3,15 +3,15 @@
 body {
   padding: 0;
   margin: 0;   
-  background: linear-gradient(180deg,transparent,#1e1e1e) #221f1e;
+  background: linear-gradient(180deg, transparent, #1e1e1e) #221f1e;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  margin: 0; padding: 0;
+  margin: 0; 
+  padding: 0;
 }
-
 
 a {
   color: inherit;
@@ -19,7 +19,7 @@ a {
   border-radius: .25rem;
   background: transparent;
   border: 1px solid #363636ff;
-  transition: background .2s,border .2s;
+  transition: background .2s, border .2s;
   padding: 1.5rem;    
   text-decoration: none;
   margin-right: 0;
@@ -33,7 +33,7 @@ a:last-child {
 }
 
 a:hover {
-  background: rgba(180,185,188,.15);
+  background: rgba(180, 185, 188, .15);
   border: 1px solid #36363626;
 }
 
@@ -82,11 +82,10 @@ section {
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
-  background: conic-gradient(from 180deg at 50% 50%,#502e2233 0deg,#502e2233 55deg,#502e2233 120deg,#502e2233 160deg,transparent 360deg);
+  background: conic-gradient(from 180deg at 50% 50%, #502e2233 0deg, #502e2233 55deg, #502e2233 120deg, #502e2233 160deg, transparent 360deg);
   width: 240px;
   height: 180px;
   z-index: -1;
-
 }
 
 .content span {
@@ -121,11 +120,9 @@ section {
     margin-bottom: 0;
     text-align: left;
   }
+}
 
-
-} 
-
-
+/* App specific styles */
 .app-section {
   display: flex;
   flex-direction: column;
@@ -142,31 +139,41 @@ section {
   font-size: 2.5em; 
   text-align: center; 
   color: #333;
+  font-weight: bold; 
 }
 
 .todo-list {
   margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 20px; 
+  border: 1px solid #ccc; 
   border-radius: 8px;
   background-color: #f9f9f9;
+  width: 400px; 
+}
+
+.todo-list h2 {
+  font-size: 1.8em; 
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .todo-list input {
-  padding: 8px;
+  padding: 12px; 
   margin-right: 8px;
-  width: 60%;
+  width: 70%; 
   border-radius: 4px;
   border: 1px solid #ccc;
+  font-size: 1em; 
 }
 
 .todo-list button {
-  padding: 8px;
+  padding: 12px 20px; 
   background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1em;
 }
 
 .todo-list ul {
@@ -175,12 +182,19 @@ section {
 }
 
 .todo-list li {
-  margin-top: 10px;
+  margin-top: 15px; 
   display: flex;
+  font-size: 1em;
   justify-content: space-between;
   align-items: center;
 }
 
 .todo-list li button {
+  padding: 8px 12px; 
   background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em; 
 }
